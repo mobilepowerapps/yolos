@@ -37,7 +37,7 @@ var deviceready = function() {
 */
     jso_configure({
         "facebook": {
-            client_id: "537761576263898",
+            client_id: "216416455188634",
             redirect_uri: "http://www.facebook.com/connect/login_success.html",
             authorization: "https://www.facebook.com/dialog/oauth",
             presenttoken: "qs"
@@ -125,9 +125,10 @@ outputlog("delete permissions");
             jso_allowia: true,
             dataType: 'json',
             data: {
-                message: "WOW with my Icenium mobile application I can post to my Facebook wall!",
-                link: "http://icenium.com/?utm_source=facebook&utm_medium=post&utm_campaign=sampleapp",
-                picture: "http://www.icenium.com/iceniumImages/features-main-images/how-it-works.png"
+                message: document.getElementById('msg').value,
+//                link: "http://cpt.aws.af.cm/cpt/cptbanner.html",
+//				link:"http://cpt.aws.af.cm/cpt/cptbanner.html",
+//                picture: "http://www.icenium.com/iceniumImages/features-main-images/how-it-works.png"
             },
             success: function(data) {
                 outputlog("Post response (facebook):");
